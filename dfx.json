@@ -1,0 +1,25 @@
+{
+  "canisters": {
+    "simple_todo_list_manager_backend": {
+      "main": "src/simple_todo_list_manager_backend/main.mo",
+      "type": "motoko"
+    },
+    "simple_todo_list_manager_frontend": {
+      "dependencies": [
+        "simple_todo_list_manager_backend"
+      ],
+      "source": [
+        "src/simple_todo_list_manager_frontend/assets"
+      ],
+      "type": "assets"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
