@@ -14,12 +14,15 @@
       "type": "assets"
     }
   },
-  "defaults": {
-    "build": {
-      "args": "",
-      "packtool": ""
+  "networks": {
+    "local": {
+      "bind": "127.0.0.1:8000",
+      "type": "ephemeral"
     }
   },
-  "output_env_file": ".env",
-  "version": 1
+  "defaults": {
+    "build": {
+      "packtool": ""
+    }
+  }
 }
